@@ -1,0 +1,138 @@
+Script started on Thu 03 Jun 2010 04:57:53 PM EDT
+Thu Jun  3 16:57:54 EDT 2010 Starting heritrix...........................^C
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-appsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app$ script/generate sc affold Mircopost[K[K[K[K[K[K[Kcroposet[K[K[Kst cone[Ktent:sc[Ktring user_id:integer
+      exists  app/models/
+      exists  app/controllers/
+      exists  app/helpers/
+      create  app/views/microposts
+      exists  app/views/layouts/
+      exists  test/functional/
+      exists  test/unit/
+      exists  public/stylesheets/
+      create  app/views/microposts/index.html.erb
+      create  app/views/microposts/show.html.erb
+      create  app/views/microposts/new.html.erb
+      create  app/views/microposts/edit.html.erb
+      create  app/views/layouts/microposts.html.erb
+   identical  public/stylesheets/scaffold.css
+      create  app/controllers/microposts_controller.rb
+      create  test/functional/microposts_controller_test.rb
+      create  app/helpers/microposts_helper.rb
+       route  map.resources :microposts
+  dependency  model
+      exists    app/models/
+      exists    test/unit/
+      exists    test/fixtures/
+      create    app/models/micropost.rb
+      create    test/unit/micropost_test.rb
+      create    test/fixtures/microposts.yml
+      exists    db/migrate
+      create    db/migrate/20100603205856_create_microposts.rb
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-appsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app$ rake db:migrate
+(in /home/sunghee/2010/research/ETD-db-program/RoR/demo-app)
+==  CreateMicroposts: migrating ===============================================
+-- create_table(:microposts)
+   -> 0.0209s
+==  CreateMicroposts: migrated (0.0212s) ======================================
+
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-appsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app$ cd .[K[K[K[Kcd config
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/configsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/config$ ls
+boot.rb       environment.rb  [0m[01;34minitializers[0m  routes.rb
+database.yml  [01;34menvironments[0m    [01;34mlocales[0m
+[m]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/configsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/config$ vi routes.rbb 
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"routes.rb" 47L, 1973C[>c[1;1H[32mActionController[m::[32mRouting[m::[32mRoutes[m.draw [33mdo[m |[36mmap[m|
+  map.resources [31m:microposts[m
+
+  map.resources [31m:users[m
+
+  [34m# The priority is based upon order of creation: first created -> highest priorr[7;1Hity.[m
+
+  [34m# Sample of regular route:[m
+  [34m#   map.connect 'products/:id', :controller => 'catalog', :action => 'view'[m
+  [34m# Keep in mind you can assign values other than :controller and :action[m
+
+  [34m# Sample of named route:[m
+  [34m#   map.purchase 'products/:id/purchase', :controller => 'catalog', :action =>>[15;1H 'purchase'[m
+  [34m# This route can be invoked with purchase_url(:id => product.id)[m
+
+  [34m# Sample resource route (maps HTTP verbs to controller actions automatically):[m[19;2H [34m#   map.resources :products[m
+
+  [34m# Sample resource route with options:[m
+  [34m#   map.resources :products, :member => { :short => :get, :toggle => :post },  [23;1H:collection => { :sold => :get }[m[24;63H1,1[11CTop[1;1H[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[24;1H[K[24;1H[?1l>[?12l[?25h[?1049l]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/configsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/config$ ls
+boot.rb       environment.rb  [0m[01;34minitializers[0m  routes.rb
+database.yml  [01;34menvironments[0m    [01;34mlocales[0m
+[m]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/configsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/config$ cd ..
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-appsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app$ cd ..[K[K[K[K[Kcd c[Kapp/controllers//
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/controllerssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/controllers$ ls [A
+application.rb  microposts_controller.rb  users_controller.rb
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/controllerssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/controllers$ vi  mci[K[Kicroposts_controller.rb 
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"microposts_controller.rb" 85L, 2129C[>c[1;1H[35mclass[m [32mMicropostsController[m < [32mApplicationController[m
+  [34m# GET /microposts[m
+  [34m# GET /microposts.xml[m
+  [35mdef[m [36mindex[m
+    [36m@microposts[m = [32mMicropost[m.find([31m:all[m)[7;4H respond_to [33mdo[m |[36mformat[m|[8;6H format.html [34m# index.html.erb[m[9;6H format.xml  { render [31m:xml[m => [36m@microposts[m }
+    [33mend[m
+  [35mend[m
+
+  [34m# GET /microposts/1[m
+  [34m# GET /microposts/1.xml[m
+  [35mdef[m [36mshow[m
+    [36m@micropost[m = [32mMicropost[m.find(params[[31m:id[m])[18;4H respond_to [33mdo[m |[36mformat[m|[19;6H format.html [34m# show.html.erb[m[20;6H format.xml  { render [31m:xml[m => [36m@micropost[m }
+    [33mend[m
+  [35mend[m[24;63H1,1[11CTop[1;1H[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[24;1H[K[24;1H[?1l>[?12l[?25h[?1049l]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/controllerssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/controllers$ cd  ..
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/appsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app$ cd models/
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/modelssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/models$ vi microopost.rb 
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"micropost.rb" 2L, 41C[>c[1;1H[35mclass[m [32mMicropost[m < [32mActiveRecord[m::[32mBase[m
+[35mend[m
+[1m[34m~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll[1;1H[?12l[?25h[?25l[24;1H[1m-- INSERT --[m[24;13H[K[24;63H2,1[11CTop[2;23r[2;1H[L[1;24r[24;63H[K[24;63H2,1[11CAll[2;1H[?12l[?25h[?25l[24;65H2[2;2H[?12l[?25h[?25l[24;65H3[2;3H[?12l[?25h[?25l v[24;65H4[2;4H[?12l[?25h[?25lva[24;65H5[2;5H[?12l[?25h[?25lal[24;65H6[2;6H[?12l[?25h[?25lli[24;65H7[2;7H[?12l[?25h[?25lid[24;65H8[2;8H[?12l[?25h[?25lda[24;65H9[2;9H[?12l[?25h[?25lat[24;65H10[2;10H[?12l[?25h[?25lte[24;66H1[2;11H[?12l[?25h[?25le_[24;66H2[2;12H[?12l[?25h[?25l_l[24;66H3[2;13H[?12l[?25h[?25lle[24;66H4[2;14H[?12l[?25h[?25len[24;66H5[2;15H[?12l[?25h[?25lng[24;66H6[2;16H[?12l[?25h[?25lgt[24;66H7[2;17H[?12l[?25h[?25lth[24;66H8[2;18H[?12l[?25h[?25l[2;17H[K[24;66H7[2;17H[?12l[?25h[?25l[2;16H[K[24;66H6[2;16H[?12l[?25h[?25l[2;15H[K[24;66H5[2;15H[?12l[?25h[?25l[2;14H[K[24;66H4[2;14H[?12l[?25h[?25l[2;13H[K[24;66H3[2;13H[?12l[?25h[?25l[2;12H[K[24;66H2[2;12H[?12l[?25h[?25l[2;11H[K[24;66H1[2;11H[?12l[?25h[?25les[24;66H2[2;12H[?12l[?25h[?25ls_[24;66H3[2;13H[?12l[?25h[?25l_l[24;66H4[2;14H[?12l[?25h[?25lle[24;66H5[2;15H[?12l[?25h[?25len[24;66H6[2;16H[?12l[?25h[?25lng[24;66H7[2;17H[?12l[?25h[?25lgt[24;66H8[2;18H[?12l[?25h[?25lth[24;66H9[2;19H[?12l[?25h[?25lh_[24;65H20[2;20H[?12l[?25h[?25l_o[24;66H1[2;21H[?12l[?25h[?25lof[24;66H2[2;22H[?12l[?25h[?25lf:[24;66H3[2;23H[?12l[?25h[?25l[2;22H[K[24;66H2[2;22H[?12l[?25h[?25l[24;66H3[2;23H[?12l[?25h[?25l :[24;66H4[2;24H[?12l[?25h[?25l[31m:c[m[24;66H5[2;25H[?12l[?25h[?25l[31mco[m[24;66H6[2;26H[?12l[?25h[?25l[31mon[m[24;66H7[2;27H[?12l[?25h[?25l[31mnt[m[24;66H8[2;28H[?12l[?25h[?25l[31mte[m[24;66H9[2;29H[?12l[?25h[?25l[31men[m[24;65H30[2;30H[?12l[?25h[?25l[31mnt[m[24;66H1[2;31H[?12l[?25h[?25l[31mt[m,[24;66H2[2;32H[?12l[?25h[?25l[24;66H3[2;33H[?12l[?25h[?25l :[24;66H4[2;34H[?12l[?25h[?25l[31m:m[m[24;66H5[2;35H[?12l[?25h[?25l[31mma[m[24;66H6[2;36H[?12l[?25h[?25l[31max[m[24;66H7[2;37H[?12l[?25h[?25l[31mxi[m[24;66H8[2;38H[?12l[?25h[?25l[31mim[m[24;66H9[2;39H[?12l[?25h[?25l[31mmu[m[24;65H40[2;40H[?12l[?25h[?25l[31mum[m[24;66H1[2;41H[?12l[?25h[?25l[24;66H2[2;42H[?12l[?25h[?25l =[24;66H3[2;43H[?12l[?25h[?25l=>[24;66H4[2;44H[?12l[?25h[?25l[24;66H5[2;45H[?12l[?25h[?25l [31m1[m[24;66H6[2;46H[?12l[?25h[?25l[31m14[m[24;66H7[2;47H[?12l[?25h[?25l[31m40[m[24;66H8[2;48H[?12l[?25h[24;1H[K[2;47H[?25l[24;63H2,47[10CAll[2;47H[?12l[?25h[?25l[24;63H[K[24;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"micropost.rb" 3L, 89C written
+[?1l>[?12l[?25h[?1049l]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/modelssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/models$ ls
+micropost.rb  user.rb
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/modelssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/models$ vi user .rb 
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"user.rb" 2L, 36C[>c[1;1H[35mclass[m [32mUser[m < [32mActiveRecord[m::[32mBase[m
+[35mend[m
+[1m[34m~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll[1;1H[?12l[?25h[?25l[24;1H[1m-- INSERT --[m[24;13H[K[24;63H2,1[11CTop[2;23r[2;1H[L[1;24r[24;63H[K[24;63H2,1[11CAll[2;1H[?12l[?25h[?25l[24;65H2[2;2H[?12l[?25h[?25l[24;65H3[2;3H[?12l[?25h[?25l h[24;65H4[2;4H[?12l[?25h[?25lha[24;65H5[2;5H[?12l[?25h[?25las[24;65H6[2;6H[?12l[?25h[?25ls_[24;65H7[2;7H[?12l[?25h[?25l_m[24;65H8[2;8H[?12l[?25h[?25lma[24;65H9[2;9H[?12l[?25h[?25lan[24;65H10[2;10H[?12l[?25h[?25lny[24;66H1[2;11H[?12l[?25h[?25l[24;66H2[2;12H[?12l[?25h[?25l :[24;66H3[2;13H[?12l[?25h[?25l[24;66H4[2;14H[?12l[?25h[?25l[24;66H3[2;13H[?12l[?25h[?25l[31m:m[m[24;66H4[2;14H[?12l[?25h[?25l[31mmi[m[24;66H5[2;15H[?12l[?25h[?25l[31mic[m[24;66H6[2;16H[?12l[?25h[?25l[31mcr[m[24;66H7[2;17H[?12l[?25h[?25l[31mro[m[24;66H8[2;18H[?12l[?25h[?25l[31mop[m[24;66H9[2;19H[?12l[?25h[?25l[31mpo[m[24;65H20[2;20H[?12l[?25h[?25l[31mos[m[24;66H1[2;21H[?12l[?25h[?25l[31mst[m[24;66H2[2;22H[?12l[?25h[?25l[31mts[m[24;66H3[2;23H[?12l[?25h[24;1H[K[2;22H[?25l[24;63H2,22[10CAll[2;22H[?12l[?25h[?25l[24;63H[K[24;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"user.rb" 3L, 59C written
+[?1l>[?12l[?25h[?1049l]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/modelssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/models$ 
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/modelssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/models$ 
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/modelssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/models$ 
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/modelssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/models$ vi[K[Kvi microopost.rb 
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+vi: /usr/local/lib/libxml2.so.2: no version information available (required by /usr/lib/libgnomevfs-2.so.0)
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"micropost.rb" 3L, 89C[>c[1;1H[35mclass[m [32mMicropost[m < [32mActiveRecord[m::[32mBase[m
+  validates_length_of [31m:content[m, [31m:maximum[m => [31m140[m
+[35mend[m
+[1m[34m~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll[1;1H[?12l[?25h[?25l[24;1H[1m-- INSERT --[m[24;13H[K[24;63H2,1[11CTop[2;23r[2;1H[L[1;24r[24;63H[K[24;63H2,1[11CAll[2;1H[?12l[?25h[?25l[24;65H2[2;2H[?12l[?25h[?25l[24;65H3[2;3H[?12l[?25h[?25l h[24;65H4[2;4H[?12l[?25h[?25lha[24;65H5[2;5H[?12l[?25h[?25las[24;65H6[2;6H[?12l[?25h[?25l[2;5H[K[24;65H5[2;5H[?12l[?25h[?25las[24;65H6[2;6H[?12l[?25h[?25l[2;5H[K[24;65H5[2;5H[?12l[?25h[?25l[2;4H[K[24;65H4[2;4H[?12l[?25h[?25l[2;3H[K[24;65H3[2;3H[?12l[?25h[?25l l[24;65H4[2;4H[?12l[?25h[?25llo[24;65H5[2;5H[?12l[?25h[?25l[2;4H[K[24;65H4[2;4H[?12l[?25h[?25l[2;3H[K[24;65H3[2;3H[?12l[?25h[?25l b[24;65H4[2;4H[?12l[?25h[?25lbe[24;65H5[2;5H[?12l[?25h[?25lel[24;65H6[2;6H[?12l[?25h[?25llo[24;65H7[2;7H[?12l[?25h[?25lon[24;65H8[2;8H[?12l[?25h[?25lng[24;65H9[2;9H[?12l[?25h[?25lgs[24;65H10[2;10H[?12l[?25h[?25ls_[24;66H1[2;11H[?12l[?25h[?25l_t[24;66H2[2;12H[?12l[?25h[?25lto[24;66H3[2;13H[?12l[?25h[?25l[24;66H4[2;14H[?12l[?25h[?25l :[24;66H5[2;15H[?12l[?25h[?25l[24;66H6[2;16H[?12l[?25h[?25l[24;66H5[2;15H[?12l[?25h[?25l[31m:u[m[24;66H6[2;16H[?12l[?25h[?25l[31mus[m[24;66H7[2;17H[?12l[?25h[?25l[31mse[m[24;66H8[2;18H[?125h[?25l[24;1H[1m-- INSERT --[m[24;13H[K[24;63H2,1[11CTop[2;23r[2;1H[L[1;24r[24;63H[K[24;63H2,1[11CAll[2;1H[?12l[?25h[?25l[24;65H2[2;2H[?12l[?25h[?25l[24;65H3[2;3H[?12l[?25h[?25l h[24;65H4[2;4H[?12l[?25h[?25lha[24;65H5[2;5H[?12l[?25h[?25las[24;65H6[2;6H[?12l[?25h[?25l[2;5H[K[24;65H5[2;5H[?12l[?25h[?25las[24;65H6[2;6H[?12l[?25h[?25l[2;5H[K[24;65H5[2;5H[?12l[?25h[?25l[2;4H[K[24;65H4[2;4H[?12l[?25h[?25l[2;3H[K[24;65H3[2;3H[?12l[?25h[?25l l[24;65H4[2;4H[?12l[?25h[?25llo[24;65H5[2;5H[?12l[?25h[?25l[2;4H[K[24;65H4[2;4H[?12l[?25h[?25l[2;3H[K[24;65H3[2;3H[?12l[?25h[?25l b[24;65H4[2;4H[?12l[?25h[?25lbe[24;65H5[2;5H[?12l[?25h[?25lel[24;65H6[2;6H[?12l[?25h[?25llo[24;65H7[2;7H[?12l[?25h[?25lon[24;65H8[2;8H[?12l[?25h[?25lng[24;65H9[2;9H[?12l[?25h[?25lgs[24;65H10[2;10H[?12l[?25h[?25ls_[24;66H1[2;11H[?12l[?25h[?25l_t[24;66H2[2;12H[?12l[?25h[?25lto[24;66H3[2;13H[?12l[?25h[?25l[24;66H4[2;14H[?12l[?25h[?25l :[24;66H5[2;15H[?12l[?25h[?25l[24;66H6[2;16H[?12l[?25h[?25l[24;66H5[2;15H[?12l[?25h[?25l[31m:u[m[24;66H6[2;16H[?12l[?25h[?25l[31mus[m[24;66H7[2;17H[?12l[?25h[?25l[31mse[m[24;66H8[2;18H[?12l[?25h[?25l[31mer[m[24;66H9[2;19H[?12l[?25h[24;1H[K[2;18H[?25l[24;63H2,18[10CAll[2;18H[?12l[?25h[?25l[24;1H[1m-- INSERT --[m[24;63H[K[24;63H3,1[11CTop[3;23r[3;1H[L[1;24r[24;63H[K[24;63H3,1[11CAll[3;1H[?12l[?25h[24;1H[K[3;1H[?25l[24;63H3,0-1[9CAll[3;1H[?12l[?25h[?25l[24;63H[K[24;1H:[?12l[?25hw[?25l[?12l[?25h[?25l"micropost.rb" 5L, 109C written[31C3,0-1[9CAll[24;63H[K[24;63H3,0-1[9CAll[3;1H[?12l[?25h[?25l[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"micropost.rb" 5L, 109C written
+[?1l>[?12l[?25h[?1049l]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/modelssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/models$ script/ console
+bash: script/console: No such file or directory
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/app/modelssunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app/models$ cd ..
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/appsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app$ script[K[K[K[K[K[Kcd ..script/console [A
+bash: script/console: No such file or directory
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-app/appsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app/app$ cd ..
+]0;sunghee@parsifal: ~/2010/research/ETD-db-program/RoR/demo-appsunghee@parsifal:~/2010/research/ETD-db-program/RoR/demo-app$ cd ..script/console
+Loading development environment (Rails 2.2.3)
+>> first_user = User.first
+=> #<User id: 2, name: "Paul Mather", email: "pmather@vt.edu", created_at: "2010-06-03 19:35:41", updated_at: "2010-06-03 19:36:11">
+>> first_user.microposts
+=> [#<Micropost id: 1, content: "First micropost", user_id: 2, created_at: "2010-06-03 21:05:09", updated_at: "2010-06-03 21:05:09">, #<Micropost id: 2, content: "Second micropost", user_id: 2, created_at: "2010-06-03 21:05:42", updated_at: "2010-06-03 21:05:42">]
+>> r[Kf [K_u = User.first
+=> #<User id: 2, name: "Paul Mather", email: "pmather@vt.edu", created_at: "2010-06-03 19:35:41", updated_at: "2010-06-03 19:36:11">
+>> f_u.poste[Ks
+NoMethodError: undefined method `posts' for #<User:0xb6d23b04>
+	from /home/sunghee/2010/research/ETD-db-program/RoR/demo-app/vendor/rails/activerecord/lib/active_record/attribute_methods.rb:260:in `method_missing'
+	from (irb):4
+>> f_u.microposte[Ks
+=> [#<Micropost id: 1, content: "First micropost", user_id: 2, created_at: "2010-06-03 21:05:09", updated_at: "2010-06-03 21:05:09">, #<Micropost id: 2, content: "Second micropost", user_id: 2, created_at: "2010-06-03 21:05:42", updated_at: "2010-06-03 21:05:42">]
+>> M[Km[Kf_m = Micropost.first
+=> #<M
